@@ -1,0 +1,63 @@
+URL
+https://spteams/sites/ICC/_vti_bin/listdata.svc/TestServiceDetails
+
+HEADERS
+Accept application/json; odata=verbose
+Content-Type application/json; odata=verbose
+
+POST
+
+BODY
+{
+	"BackendHost": "messagingoperationaldataservice-msg-opr-data-svc-sit-t7.non-prod.customer.rspservices.nordstrom.net",
+	"BackendPort": "443",
+	"Environment": "TEST",
+	"IncomingURI": "/messagingoperationaldataservice/Messages/WebVerification test post",
+	"Protocol": "https",
+	"SERVICE_TYPE": "RESTGW",
+	"ServiceProviderName": "MyTEST"
+}
+
+**************************************************
+
+URL
+https://spteams/sites/ICC/_vti_bin/listdata.svc/TestServiceDetails?$filter=ServiceProviderName eq 'myTEST'
+
+HEADERS
+Accept application/json; odata=verbose
+Content-Type application/json; odata=verbose
+
+GET
+
+(return)
+https://spteams/sites/ICC/_vti_bin/listdata.svc/TestServiceDetails(779)
+
+**************************************************
+
+(returned) URI
+https://spteams/sites/ICC/_vti_bin/listdata.svc/TestServiceDetails(779)
+
+HEADERS
+Accept application/json; odata=verbose
+Content-Type application/json; odata=verbose
+X-HTTP-Method MERGE
+If-Match *
+
+POST
+
+BODY
+{
+	"BackendHost": "messagingoperationaldataservice-msg-opr-data-svc-update example",
+	"IncomingURI": "/messagingoperationaldataservice/Messages/WebVerification test UPDATE"
+}
+
+**************************************************
+
+(returned) URI
+https://spteams/sites/ICC/_vti_bin/listdata.svc/TestServiceDetails(779)
+
+HEADERS
+Accept application/json; odata=verbose
+Content-Type application/json; odata=verbose
+X-HTTP-Method DELETE
+If-Match *
